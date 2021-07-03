@@ -21,7 +21,7 @@ class Post(models.Model):
     url = models.SlugField(max_length=255, unique=True)
 
     class Meta:
-        ordering = ('title')
+        ordering = ('title',)
 
     def __str__(self):
         """Return title and username"""
